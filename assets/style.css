@@ -1,3 +1,112 @@
 body {
-    background: blueviolet;
+    background-color: rgb(218, 98, 30);
+    text-align:center; 
+    color: #43abc9;
+    font-family: "luckiest guy", sans-serif;
+    letter-spacing: 3px;
 }
+
+.title1 a {
+font-size: 60px;
+text-shadow: 3px 3px 0 #3a3a3a;
+cursor: pointer;
+text-decoration: none;
+color: #43abc9;
+}
+.title1 a:hover {
+    font-size: 70px;
+    color: #3a3a3a;
+    text-shadow: 3px 3px 0 #43abc9;
+}
+
+.title2 {
+    font-size:40px;
+    text-shadow: 3px 3px 0 #3a3a3a;
+}
+
+.mainpage-box {
+    height: 50vh;
+    width: 50%;
+    background-color: white;
+    border: 3px solid #43abc9;
+    padding: 10px;
+    margin:auto;
+    text-shadow: 1px 1px 0 #3a3a3a;
+}
+
+.buttoneasy {
+    display: block;
+    height:auto;
+    width:30%;
+    background-color: #43abc9;
+    color: white;
+    margin: auto;
+    font-family: "luckiest guy", sans-serif;
+    font-size:30px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    text-decoration: none;
+    border: 3px solid #3a3a3a;
+    padding: 30px 0;
+}
+.buttoneasy span {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.buttoneasy:hover{
+    background-color: white ;
+    color: #43abc9;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}  
+.buttoneasy:hover span{
+    display: none;
+}
+.buttoneasy:hover::before{
+    content: "Easy Peasy!";
+}
+
+.buttonhard {
+    display: block;
+    height:auto;
+    width:30%;
+    background-color: #43abc9;
+    color: white;
+    margin: auto;
+    font-family: "luckiest guy", sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    border: 3px solid #3a3a3a;
+    text-decoration: none;
+    word-spacing: 2px;
+    padding: 30px 0;
+
+}
+.buttonhard span {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.buttonhard:hover{
+    background-color: white ;
+    color: #43abc9;
+    cursor: pointer;
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+ }  
+.buttonhard:hover span{
+    display: none;
+}
+.buttonhard:hover::before{
+    content: "Hard!? You Sure?";
+}
+    
