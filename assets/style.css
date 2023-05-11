@@ -127,8 +127,8 @@ text-align: center;
 }
     
 .easymodebox {
-    width:700px;
-    height: 900px;
+    width:750px;
+    height: 700px;
     margin: auto;
     display:flex;
     flex-wrap: wrap;
@@ -138,10 +138,18 @@ text-align: center;
 
 .easymodecard {
     width: calc(25% - 10px);
-    height: calc(25% - 10px);
+    height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;
+    transform: scale(1);
+}
+.easymodecard:active {
+transform: scale(0.90);
+transition: transform .2s;
+}
 
+.easymodecard:hover {
+    cursor: pointer;
 }
 
 .easyfront,
