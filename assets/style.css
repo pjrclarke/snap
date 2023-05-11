@@ -40,6 +40,7 @@ text-align: center;
 .info {
     text-align: center;
     margin-top: 20px;
+    font-size: 40px;
 }
 
 .mainpage-box {
@@ -127,7 +128,7 @@ text-align: center;
 }
     
 .easymodebox {
-    width:750px;
+    width: 850px;
     height: 700px;
     margin: auto;
     display:flex;
@@ -154,6 +155,7 @@ transition: transform .2s;
 
 .easymodecard:hover {
     cursor: pointer;
+
 }
 
 .easymodecard.flip {
@@ -173,4 +175,28 @@ transition: transform .2s;
 
 .easyfront {
     transform: rotateY(180deg);
+}
+
+.score {
+    text-align: center;
+    background: white;
+    border: 3px solid #43abc9;
+    width: 500px;
+    height: 130px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: 1px 1px 0 #3a3a3a;
+}
+.score span {
+    color: rgb(218, 98, 30);
+    font-size: 40px;
+    text-shadow: 2px 2px 0 #3a3a3a;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -11,3 +11,10 @@ With the easy mode I started with 20 tiles - Seems a little unfair considering t
 I brought it down the 16.
 
 bug
+
+TO ADD
+
+Resetting the board when all complete then adding score to total.
+Elements to 'shake when pair made'
+elements to all shake together when all are complete. 
+Alert to come up to say congratulations, do you want to play this again? 

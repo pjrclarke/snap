@@ -44,7 +44,7 @@ function unflipCards() {
         secondCard.classList.remove('flip');
 
         resetBoard();
-    }, 800);
+    }, 500);
 }
 
 function resetBoard() {
@@ -58,5 +58,18 @@ function resetBoard() {
         card.style.order = ramdomPos;
     });
 })();
+
+
+function incrementScore() {
+
+    let oldScore = parseInt(document.getElementById("total").innerText);
+    document.getElementById("total").innerText = ++oldScore;
+
+}
+
+function gameComplete () {
+    if (userFlip === true);
+    return;
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard));
