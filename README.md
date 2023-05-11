@@ -3,3 +3,6 @@ color on the background a mixture called darker coral. text is lighter Alice. In
 BUGS
 FIXED
 THe opening page - Couldn't figure out how to centre on a vertical basis. Help from the tutors at Code institute for reminding me about display:flex and its properties!
+
+With the easy mode I started with 20 tiles - Seems a little unfair considering this page will be directed and aimed at Children. 
+I brought it down the 16.
