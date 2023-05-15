@@ -18,3 +18,55 @@ Resetting the board when all complete then adding score to total.
 Elements to 'shake when pair made'
 elements to all shake together when all are complete. 
 Alert to come up to say congratulations, do you want to play this again? 
+
+Sarah @ code institute. 
+
+
+Cards didn't increment or match up. 
+
+"
+function checkWin () {
+    if(matchedCards === 6){
+    gameOver();}
+}
+
+function gameOver () {
+    if (checkWin === true) {
+        alert("Congrats!");
+        resetBoard();
+        shuffle();
+        score += 1;
+        document.getElementsByClassName("total").innerHTML = score; 
+    }
+}
+console.log(gameOver);
+"
+
+They were matching up on the console.log. but not didn't push the orther code
+
+
+"(function shuffle() {
+    cards.forEach(card => {
+        let ramdomPos = Math.floor(Math.random() * 12);
+        card.style.order = ramdomPos;
+    });
+})();"
+Brackets! 
+
+After removing the brackets, I need to call the function when the game started. 
+
+When gameOver was called. All of the functions were working. Apart from the cards we not flipping back over. 
+
+"function gameOver () {
+        alert("Congrats!");
+        resetBoard();
+        shuffle();
+        unflipCards();
+        score += 1;
+        document.getElementById("total").innerHTML = score; 
+        cards.forEach(card => card.classList.remove('flip'))
+        console.log("game over was called")
+}
+"
+Solved the flipping back over but when a new game starts. the cards don't turn over when selected. 
+
