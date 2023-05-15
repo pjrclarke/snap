@@ -201,11 +201,11 @@ transition: transform .2s;
     align-items: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   
 .easymodebox {
         width: 380px;
-        height: 380px;
+        height: 350px;
         margin-left:auto;
         margin-right: auto;
         display:flex;
