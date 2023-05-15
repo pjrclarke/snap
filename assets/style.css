@@ -202,19 +202,33 @@ transition: transform .2s;
 }
 
 @media screen and (max-width: 450px) {
-  
+.mainpage-box {
+        width:380px;
+        font-size: 20px;
+ }
+ .title1 {
+    margin-top: 20px;
+ }
+ .info {
+    font-size: 20px;
+ }
+ .buttoneasy {
+    font-size: 20px;
+ }
+ .buttonhard {
+    font-size:20px;
+ }
 .easymodebox {
         width: 380px;
         height: 350px;
         margin-left:auto;
         margin-right: auto;
         display:flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
 }
 .score {
     width: 300px;
     height: 130px;
     font-size: 20px;
 }
-    
+}
