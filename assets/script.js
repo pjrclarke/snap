@@ -1,3 +1,13 @@
+let instructions = document.getElementById("instructions");
+
+function openInstructions() {
+    instructions.classList.add("open-instructions");
+}
+function closeInstructions(){
+    instructions.classList.remove("open-instructions");
+}
+
+
 let cards = document.querySelectorAll('.easymodecard');
 
     let userFlipped = false;

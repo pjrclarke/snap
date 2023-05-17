@@ -12,14 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class ="layer">
+<div class ="layer">
     <h1 class="title1"><a href="index.html">Snap!</a></h1>
     <h2 class="title2">The Memory Game</h2>
-<div class="mainpage-box">
-    <h2 class="info">Choose a difficulty</h2>
-<a class="buttoneasy" href="easymode.html"><span>Easy</span></a>
-<a class="buttonhard" href="hardmode.html"><span>Hard</span></a>
-</div>
+    <div class="mainpage-box">
+        <h2 class="info">Choose a difficulty</h2>
+        <a class="buttoneasy" href="easymode.html"><span>PLAY!</span></a>
+        <a class="buttonhard" onclick="openInstructions()"><span>Instructions</span></a>
+            <div class="instructions" id="instructions">
+                <img src="assets/images/cardback.png" alt="question mark">
+                <h2>Instructions</h2>
+                <p>You need to try and pair as many cards as you can!</p>
+                <p>Simply click two cards to see if they match.</p>
+                <p>If they don't, they will turn back around and you can try again.</p>
+                <p>All good? Then let's go!</p>
+                <a href="easymode.html"><button type="submit" onclick="closeInstructions()">Let's do it!</button></a>
+            </div>
+    </div>
 </div>
     <script src="assets/script.js"></script>
 </body>

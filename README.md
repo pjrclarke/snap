@@ -70,3 +70,6 @@ When gameOver was called. All of the functions were working. Apart from the card
 "
 Solved the flipping back over but when a new game starts. the cards don't turn over when selected. 
 
+
+https://www.youtube.com/watch?v=AF6vGYIyV8M
+
