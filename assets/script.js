@@ -83,7 +83,7 @@ function newGame () {
 }
 
 let cardMatch = new Audio("assets/sounds/correctSound.mp3");
-let gameOverSound = new Audio("assets/sounds/gameoversound.ogg");
+let gameOverSound = new Audio("assets/sounds/gameoversound.wav");
 let notMatch = new Audio("assets/sounds/8biterror.wav")
 
 function checkForMatch() {
