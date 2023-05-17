@@ -388,7 +388,7 @@ transition: transform .2s;
     width: 50px;
 }
 .open-instructions {
-    top:40%;
+    top:50%;
 }
 .score {
     width: 300px;
