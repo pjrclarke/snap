@@ -7,6 +7,18 @@ function closeInstructions(){
     instructions.classList.remove("open-instructions");
 }
 
+let congratulations = document.getElementById("gameOverPopup");
+
+function openGameOver () {
+    congratulations.classList.add("open-gameoverpopup");
+    
+}
+function closeGameOver () {
+    congratulations.classList.remove("open-gameoverpopup");
+    
+}
+
+
 
 let cards = document.querySelectorAll('.easymodecard');
 
@@ -57,13 +69,15 @@ function checkWin () {
 }
 
 function gameOver () {
-        alert("Congratulations! Want to go again? Click ok!");
         score += 1;
         document.getElementById("total").innerHTML = score; 
-        cards.forEach(card => card.classList.remove('flip'))
+        cards.forEach(card => card.classList.remove('flip'));
         newGame();
-        console.log("game over was called")
+        console.log("game over was called");
+        openGameOver();
 }
+
+
 
 function newGame () {
     matchedCards = 0;

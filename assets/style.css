@@ -3,8 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-
 body {
     background-color: rgb(218, 98, 30);
     color: #43abc9;
@@ -29,20 +27,17 @@ text-align: center;
     text-shadow: 3px 3px 0 #43abc9;
     text-align: center;
 }
-
 .title2 {
     font-size:40px;
     text-shadow: 3px 3px 0 #3a3a3a;
     text-align: center;
     margin-bottom: 20px;
 }
-
 .info {
     text-align: center;
     margin-top: 20px;
     font-size: 40px;
 }
-
 .mainpage-box {
     width:800px;
     height: auto;
@@ -52,7 +47,6 @@ text-align: center;
     margin:auto;
     text-shadow: 1px 1px 0 #3a3a3a;
 }
-
 .buttoneasy {
     display: block;
     height:20%;
@@ -132,7 +126,7 @@ text-align: center;
     text-align: center;
     padding: 0 30px 0 30px;
     color: white;
-    text-shadow: 1px 1px 0 #3a3a3a;
+    text-shadow: 3px 3px 0 #3a3a3a;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
@@ -267,6 +261,82 @@ transition: transform .2s;
     align-items: center;
 }
 
+.gameoverpopup {
+    width: 900px;
+    height: 400px;
+    background: #43abc9;
+    border-radius:6px;
+    border: 1px solid #3a3a3a;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 0 30px;
+    color: white;
+    text-shadow: 1px 1px 0 #3a3a3a;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-gameoverpopup {
+    visibility: visible;
+    top: 50%;
+    transform:translate(-50%,-50%) scale(1);
+}
+.close-gameoverpopup {
+    visibility: hidden;
+    top:0%;
+    transform:translate(-50%,-50%) scale(0.1);
+}
+.gameoverpopup img {
+    width:100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px rgba(218, 98, 30, 0.2);
+    border: 2px solid #3a3a3a;
+
+}
+.gameoverpopup h2 {
+    margin-top: 20px;
+    margin-bottom:20px;
+    font-size: 40px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 0 #3a3a3a;
+}
+
+.gameoverpopup p {
+    line-height: 40px;
+    text-shadow: 1px 1px 0 #3a3a3a;
+    font-size: 25px;
+}
+
+.gameoverpopup button {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 100%;
+    background: white;
+    color: #43abc9;
+    border: 2px solid #3a3a3a;
+    outline: none;
+    font-size: 30px;
+    font-family:"luckiest guy", sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(218, 98, 30, 0.2);
+    text-shadow: 1px 1px 0 #3a3a3a;
+}
+
+.gameoverpopup button:hover {
+    background: #3a3a3a;
+    color: white;
+    text-shadow: 1px 1px 0 #3a3a3a;
+}
+.gameoverpopup p:nth-child(6) {
+    margin-top: 50px;
+}
+
+
+
 @media screen and (max-width: 450px) {
 .mainpage-box {
         width:380px;
@@ -274,6 +344,15 @@ transition: transform .2s;
  }
  .title1 {
     margin-top: 20px;
+ }
+ .title1 a {
+    font-size: 40px;
+ }
+ .title1 a:hover {
+    font-size: 45px;
+ }
+ .title2 {
+    font-size: 30px;
  }
  .info {
     font-size: 20px;
@@ -286,11 +365,30 @@ transition: transform .2s;
  }
 .easymodebox {
         width: 380px;
-        height: 350px;
+        height: 300px;
         margin-left:auto;
         margin-right: auto;
         display:flex;
         flex-wrap: wrap;  
+}
+.buttoneasy,
+.buttonhard {
+    width: 100%;
+}
+.instructions {
+    width: 350px;
+}
+.instructions h2 {
+    font-size: 20px;
+}
+.instructions p {
+    font-size: 15px;
+}
+.instructions img {
+    width: 50px;
+}
+.open-instructions {
+    top:40%;
 }
 .score {
     width: 300px;
