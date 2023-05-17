@@ -82,7 +82,7 @@ function newGame () {
     cards.forEach(card => card.addEventListener('click', flipCard));
 }
 
-let cardMatch = new Audio("assets/sounds/8bitmatch.wav");
+let cardMatch = new Audio("assets/sounds/correctSound.mp3");
 let gameOverSound = new Audio("assets/sounds/gameoversound.ogg");
 let notMatch = new Audio("assets/sounds/8biterror.wav")
 

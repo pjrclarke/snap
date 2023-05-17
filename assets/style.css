@@ -339,7 +339,19 @@ transition: transform .2s;
     margin-top: 50px;
 }
 
+@media screen and (max-width: 800px) {
+.mainpage-box {
+    width:450px;
+    font-size: 20px;
+ }
 
+.buttoneasy {
+    width: 80%;
+}
+.buttonhard {
+    width:80%;
+}
+}
 
 @media screen and (max-width: 450px) {
 .mainpage-box {
@@ -398,7 +410,6 @@ transition: transform .2s;
     margin-bottom: 10px;
     font-size: 15px;
 }
-
 .open-instructions {
     top:50%;
 }
@@ -419,5 +430,23 @@ transition: transform .2s;
 .gameoverpopup button {
     height: 50px;
     border: none;
+}
+}
+
+@media screen and (max-width: 370px) {
+.mainpage-box {
+    width: 280px;
+}
+.title1 a {
+    font-size: 30px;
+}
+.title1 a:hover {
+    font-size: 35px;
+}
+.title2 {
+    font-size: 20px;
+}
+.info {
+    font-size: 10px;
 }
 }
