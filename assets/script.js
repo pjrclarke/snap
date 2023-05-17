@@ -57,14 +57,13 @@ function disableCards () {
     firstCard.removeEventListener('click',flipCard);
     secondCard.removeEventListener('click',flipCard);
     matchedCards += 1;
-    console.log(matchedCards);
     checkWin();
+    cardMatch.play();
     resetBoard();
 }
 
 function checkWin () {
     if(matchedCards === 6){
-        console.log("game Over!")
         gameOver();}
 }
 
@@ -73,11 +72,9 @@ function gameOver () {
         document.getElementById("total").innerHTML = score; 
         cards.forEach(card => card.classList.remove('flip'));
         newGame();
-        console.log("game over was called");
+        gameOverSound.play();
         openGameOver();
 }
-
-
 
 function newGame () {
     matchedCards = 0;
@@ -85,11 +82,17 @@ function newGame () {
     cards.forEach(card => card.addEventListener('click', flipCard));
 }
 
+let cardMatch = new Audio("assets/sounds/8bitmatch.wav");
+let gameOverSound = new Audio("assets/sounds/gameoversound.ogg");
+let notMatch = new Audio("assets/sounds/8biterror.wav")
+
 function checkForMatch() {
     let match = firstCard.dataset.framework === secondCard.dataset.framework 
         match ? disableCards() : unflipCards();
         return;
 }
+
+
 
 function unflipCards() {
     lockboard = true;
@@ -100,6 +103,7 @@ function unflipCards() {
 
         resetBoard();
     }, 500);
+    notMatch.play();
 }
 
 function resetBoard() {
