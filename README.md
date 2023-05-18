@@ -1,3 +1,9 @@
+# Snap! #
+Snap! is a fun filled, memory game. Players select two cards, if they match, it's a Snap! If not, the cards turn back around and you try again. They keep going until they have all 6 pairs. It's a good game for passing time, for having a bit of silliness and enjoying a user interface that is easy on the eyes and easy to use. 
+
+
+
+
 color on the background a mixture called darker coral. text is lighter Alice. Inspired by Dragon Ball colors as I was watching this as I was making it. 
 
 BUGS

@@ -131,7 +131,7 @@ text-align: center;
 }
 .open-instructions {
     visibility: visible;
-    top:40%;
+    top:50%;
     transform:translate(-50%,-50%) scale(1);
 }
 .close-instructions {
@@ -190,8 +190,8 @@ text-align: center;
 /* game.html */
 
 .easymodebox {
-    width: 850px;
-    height: 700px;
+    width: 700px;
+    height: 550px;
     margin: auto;
     display:flex;
     flex-wrap: wrap;
@@ -349,7 +349,7 @@ transition: transform .2s;
 
 /*responsiveness*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 .mainpage-box {
     width:450px;
     font-size: 20px;
@@ -360,11 +360,34 @@ transition: transform .2s;
 .buttonhard {
     width:80%;
 }
+.easymodebox {
+    width: 600px;
+    height: 450px;
+}
 .easymodecard {
     border: 2px solid #3a3a3a;
     border-radius: 8%;
 }
 }
+
+@media screen and (max-width: 610px) {
+.easymodebox {
+    width: 500px;
+    height: 375px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.easymodebox {
+        width: 400px;
+        height: 300px;
+}
+.score {
+        max-width: 70%;
+        font-size: 20px;
+}
+}
+
 @media screen and (max-width: 450px) {
 
 .responsive {
@@ -387,7 +410,6 @@ transition: transform .2s;
  .title2 {
     font-size: 30px;
  }
-
  .buttoneasy {
     font-size: 20px;
  }
@@ -448,7 +470,7 @@ transition: transform .2s;
 }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 320px) {
 .mainpage-box {
     width: 280px;
 }
@@ -463,5 +485,9 @@ transition: transform .2s;
 }
 .info {
     font-size: 10px;
+}
+.easymodebox {
+    width: 300px;
+    height: 200px;
 }
 }
