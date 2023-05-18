@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<!--Favicon created at https://favicon.io/favicon-generator/-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
+    <div class="responsive">
 <!--The main title, repeated on both pages-->
     <h1 class="title1"><a href="index.html">Snap!</a></h1>
     <h2 class="title2">The Memory Game</h2>
@@ -25,7 +27,7 @@
             <a class="buttonhard" onclick="openInstructions()"><span>Instructions</span></a>
 <!-- These are the instructions, housed in a div which I'll style and add the transition to pop up in CSS and JS-->
                 <div class="instructions" id="instructions">
-                    <img src="assets/images/cardback.png" alt="question mark">
+                    <img src="assets/images/cardback.webp" alt="question mark">
                     <h2>Instructions</h2>
                     <p>You need to try and pair all of the cards on the page!</p>
                     <p>Simply click two cards to see if they match.</p>
@@ -34,7 +36,8 @@
                     <p>All good? Then let's go!</p>
                     <a href="game.html"><button type="submit" onclick="closeInstructions()">Let's do it!</button></a>
                 </div>
-        </div>
+            </div>
+    </div>
 <script src="assets/script.js"></script>
 </body>
 </html>
