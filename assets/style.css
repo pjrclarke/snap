@@ -1,3 +1,5 @@
+/*For Both pages of my site*/
+
 * {
     padding: 0;
     margin: 0;
@@ -22,7 +24,6 @@ color: #43abc9;
 text-align: center;
 }
 .title1 a:hover {
-    font-size: 70px;
     color: #3a3a3a;
     text-shadow: 3px 3px 0 #43abc9;
     text-align: center;
@@ -33,11 +34,8 @@ text-align: center;
     text-align: center;
     margin-bottom: 20px;
 }
-.info {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 40px;
-}
+/* code for index page */
+
 .mainpage-box {
     width:800px;
     height: auto;
@@ -76,13 +74,11 @@ text-align: center;
     align-items: center;
 }  
 .buttoneasy:hover span{
-    display: none;
-    
+    display: none; 
 }
 .buttoneasy:hover::before{
     content: "Let's go!";
 }
-
 .buttonhard {
     display: block;
     height:20%;
@@ -98,13 +94,11 @@ text-align: center;
     word-spacing: 2px;
     padding: 30px 0;
 }
-
 .buttonhard span {
     display:flex;
     justify-content: center;
     align-items: center;
-}
-    
+}  
 .buttonhard:hover{
     background-color: white ;
     color: #43abc9;
@@ -112,7 +106,9 @@ text-align: center;
     display:flex;
     justify-content: center;
     align-items: center;
- }  
+ }
+ /* Pop-Up box on index.html - This was helped by https://www.youtube.com/watch?v=AF6vGYIyV8M 
+ I changed some of the options to suit me but this helped me understand how to create this pop up*/
 
  .instructions {
     width:700px;
@@ -146,7 +142,6 @@ text-align: center;
     border-radius: 50%;
     box-shadow: 0 3px 5px rgba(218, 98, 30, 0.2);
     border: 2px solid #3a3a3a;
-
 }
 .instructions h2 {
     margin-top: 20px;
@@ -155,13 +150,11 @@ text-align: center;
     text-decoration: underline;
     text-shadow: 1px 1px 0 #3a3a3a;
 }
-
 .instructions p {
     line-height: 40px;
     text-shadow: 1px 1px 0 #3a3a3a;
     font-size: 25px;
 }
-
 .instructions button {
     margin-bottom: 50px;
     margin-top: 50px;
@@ -177,7 +170,6 @@ text-align: center;
     box-shadow: 0 3px 5px rgba(218, 98, 30, 0.2);
     text-shadow: 1px 1px 0 #3a3a3a;
 }
-
 .instructions button:hover {
     background: #3a3a3a;
     color: white;
@@ -190,7 +182,9 @@ text-align: center;
     font-size: 35px;
     text-shadow: #3a3a3a 1px 0 10px;
 }
+/* "Easymode" refers to the placeholder as I was going to create two difficulties - Something for the future perhaps */
 
+/* game.html */
 .easymodebox {
     width: 850px;
     height: 700px;
@@ -201,7 +195,6 @@ text-align: center;
     border: 3px solid #43abc9;
     perspective: 1000px;
 }
-
 .easymodecard {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -210,22 +203,19 @@ text-align: center;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
+    border: 3px solid #3a3a3a;
+    border-radius: 5%;
 }
-
 .easymodecard:active {
 transform: scale(0.90);
 transition: transform .2s;
 }
-
 .easymodecard:hover {
     cursor: pointer;
-
 }
-
 .easymodecard.flip {
     transform: rotateY(180deg);
 }
-
 .easyfront,
 .easyback {
     width:100%;
@@ -236,11 +226,9 @@ transition: transform .2s;
     background: #43abc9;
     backface-visibility: hidden;
 }
-
 .easyfront {
     transform: rotateY(180deg);
 }
-
 .score {
     text-align: center;
     background: white;
@@ -264,6 +252,7 @@ transition: transform .2s;
     justify-content: center;
     align-items: center;
 }
+/* pop up for when the game ends, using the same technique as the one before */
 
 .gameoverpopup {
     width: 900px;
@@ -280,8 +269,7 @@ transition: transform .2s;
     color: white;
     text-shadow: 1px 1px 0 #3a3a3a;
     visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-    
+    transition: transform 0.4s, top 0.4s; 
 }
 .open-gameoverpopup {
     visibility: visible;
@@ -300,7 +288,6 @@ transition: transform .2s;
     box-shadow: 0 3px 5px rgba(218, 98, 30, 0.2);
     border: 2px solid #3a3a3a;
 }
-
 .gameoverpopup h2 {
     margin-top: 20px;
     margin-bottom:20px;
@@ -310,6 +297,8 @@ transition: transform .2s;
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
+
+/*This shake animation was created and copied from https://www.w3schools.com/howto/howto_css_shake_image.asp. Initially for imagery, but used for text in my code*/
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -324,14 +313,11 @@ transition: transform .2s;
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
-
-
 .gameoverpopup p {
     line-height: 40px;
     text-shadow: 1px 1px 0 #3a3a3a;
     font-size: 25px;
 }
-
 .gameoverpopup button {
     margin-bottom: 30px;
     margin-top: 30px;
@@ -347,7 +333,6 @@ transition: transform .2s;
     box-shadow: 0 3px 5px rgba(218, 98, 30, 0.2);
     text-shadow: 1px 1px 0 #3a3a3a;
 }
-
 .gameoverpopup button:hover {
     background: #3a3a3a;
     color: white;
@@ -357,12 +342,13 @@ transition: transform .2s;
     margin-top: 50px;
 }
 
+/*responsiveness*/
+
 @media screen and (max-width: 800px) {
 .mainpage-box {
     width:450px;
     font-size: 20px;
  }
-
 .buttoneasy {
     width: 80%;
 }
@@ -370,7 +356,6 @@ transition: transform .2s;
     width:80%;
 }
 }
-
 @media screen and (max-width: 450px) {
 .mainpage-box {
         width:380px;

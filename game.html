@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Snap!</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
-<body>
-    
-<!--Main Title - Every Page -->
 
+<body>
     <h1 class="title1"><a href="index.html">Snap!</a></h1>
     <h2 class="title2">The Memory Game</h2>
 
-<!--Main Section of the game-->
-
+<!--This secion houses the entire game-->
 <section class="easymodebox">
 
+<!--I need to create one div for every card front and back and also set the imagery for each side -->
     <div class="easymodecard" data-framework="cardone">
         <img class="easyfront" src="assets/images/easy-one.png" alt="cardone">
         <img class="easyback" src="assets/images/cardback.png" alt="Easy Mode Back">
@@ -84,18 +85,20 @@
 
 </section>
 
+<!--This div houses the users score data and how many times they've completed the game-->
+
 <div class ="score">
     <p class="score-tally">You've completed Snap!<span id="total"> 0 </span> times.</p>
 </div>
-
+<!--Another pop up when the game finishes, this gives the user an option to play again or return to the homescreen-->
 <div class="gameoverpopup" id="gameOverPopup">
     <img src="assets/images/cardback.png" alt="question mark">
     <h2>Congratulations!!</h2>
     <p>Would you like to play again?</p>
     <button type="submit" onclick="closeGameOver()">Yup!</button>
-    <a href="index.html"><button type="submit">Nope!</button></a>
+    <a href="index.html"><button type="submit">Nope!(Lose your progress)</button></a>
 </div>
 
-    <script src="assets/script.js"></script>
+<script src="assets/script.js"></script>
 </body>
 </html>

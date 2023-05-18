@@ -75,3 +75,7 @@ https://www.youtube.com/watch?v=AF6vGYIyV8M
 
 match pair sound https://freesound.org/people/Gronkjaer/sounds/654321/
 game ove rsound https://freesound.org/people/FunWithSound/sounds/456966/
+
+card backing https://pixabay.com/vectors/question-mark-info-help-orange-295272/
+
+favicon - https://favicon.io/favicon-generator/ 
