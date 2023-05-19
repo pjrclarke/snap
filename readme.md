@@ -11,7 +11,7 @@ Get comfortable, be silly and <a href = https://pjrclarke.github.io/snap/index.h
 * [**Wireframes**](<#wireframes>)
 * [**Site Structure**](#site-structure)
 * [**Design Choices**](#design-choices)
-    * [Typograghy](#typograghy)
+    * [Typography](#typography)
     * [Colour Choices](#colour-choices)
 * [**Features**](<#features>)
     * [Home Page](<#home-page>)
@@ -27,7 +27,7 @@ Get comfortable, be silly and <a href = https://pjrclarke.github.io/snap/index.h
 * [**Known Bugs**](<#known-bugs>)
     * [Resolved](<#resolved>)
     * [Unresolved](<#unresolved>)
-    * [Accessability](<#accessability>)
+    * [Accessibility](<#accessibility>)
 * [**Testing User Stories**](<#testing-user-stories>)
 * [**Deployment**](<#deployment>)
     * [To deploy the project](<#to-deploy-the-project>)
@@ -52,7 +52,7 @@ Get comfortable, be silly and <a href = https://pjrclarke.github.io/snap/index.h
 # Wireframes #
 
 The Wireframes for `Snap!` were made on [Balsamiq](https://www.balsamiq.cloud).
-The below wireframes are a good representation of change for the better. I had an initial idea to go down a portrait / landscape root. Maybe something for the future but from the wireframing, the finalised design isn't too far from the intital drawings. 
+The below wireframes are a good representation of change for the better. I had an initial idea to go down a portrait / landscape root. Maybe something for the future but from the wireframing, the finalised design isn't too far from the initial drawings. 
 
 ![Wireframes](readmefiles/wireframes_snap.png)
 
@@ -67,7 +67,7 @@ You can also see the quantity of cards has changed and there is a lot more consi
 
 # Design Choices #
 
-## Typograghy ##
+## Typography ##
 
 When thinking about `Snap!` and how much I wanted it to be a fun experience for the user. The font needs to be something fun, rounded and partly nonsensical. The font [Luckiest Guy](https://fonts.google.com/specimen/Luckiest+Guy?query=luckiest+guy) in regular 400 was a perfect choice and one I found straight away at the start of the project. The mix of uppercase and lowercase letters and the slightly off line effect made this a sure choice for this game. 
 
@@ -79,7 +79,7 @@ When thinking about `Snap!` and how much I wanted it to be a fun experience for 
 
 ## Colour Choices ##
 
-The inspiration behind the colour choices for `Snap!`, came from the japanese animation 'Dragon Ball'. The orange and blue combination gave off a really fun and colourful design and mixed well on the screen. The orange is called 'Darker Coral' where as the blue is called 'Lighter Alice'. I have text shadowing and border lines using 'Black Olive'.
+The inspiration behind the colour choices for `Snap!`, came from the japanese animation 'Dragon Ball'. The orange and blue combination gave off a really fun and colourful design and mixed well on the screen. The orange is called 'Darker Coral' whereas the blue is called 'Lighter Alice'. I have text shadowing and border lines using 'Black Olive'.
 
 ![Colour Choices](readmefiles/colorchoices.png)
 
@@ -111,7 +111,7 @@ The Game page welcomes the user with fun filled mystery. 12 squares (cards) are 
 
 ![Game](readmefiles/gameone.png)
 
-When selecting these cards, the user is offered a few things to immerse them. Firstly, we have a smooth flipping of the cards, colourful and fun numbers on different coloured backgrounds and fun little sound effects (my four year old son laughed so confirmation that it works) which are different dependant on whether you select the right match or wrong match. 
+When selecting these cards, the user is offered a few things to immerse them. Firstly, we have a smooth flipping of the cards, colourful and fun numbers on different coloured backgrounds and fun little sound effects (my four year old son laughed so confirmation that it works) which are different depending on whether you select the right match or wrong match. 
 
 ![During the Game](readmefiles/gametwo.png)
 
@@ -129,7 +129,7 @@ When the game is over a pop-up shows up congratulating you for completing the bo
 - A higher difficulty with more cards and harder to spot differences. 
 - A game of chance and ultimate difficulty. When you get a match wrong, the board shuffles again.
 - custom artwork to keep consistency with image ratio. 
-- Create a version of the site and game dedicated for the visually imparied to help guide them. Including;
+- Create a version of the site and game dedicated for the visually impaired to help guide them. Including;
     * Colour contrasting
     * Shaking and zoom functions when highlighting a card. 
 
@@ -206,11 +206,11 @@ The JavaScript code was checked over by [jshint](https://jshint.com/) which foun
 
 ### Bugs in the code ##
 
-- The opening page - Couldn't figure out how to centre on a vertical axis. I found that display:flex and its properties were the best solution here. 
+- The opening page - Couldn't figure out how to center on a vertical axis. I found that display:flex and its properties were the best solution here. 
 
 - The cards on easymode.html were shifting to the right slightly, realised as I had text-align: center; in the body, this was the issue. Removed and this fixed the issue. 
 
-- When gameOver() was called. All of the functions were working. Apart from the cards we not flipping back over. 
+- When gameOver() was called. All of the functions were working. Apart from the cards were not flipping back over. 
 
 ```
 function gameOver () {
@@ -258,24 +258,24 @@ This was resolved with the above coding. Creating a function to check the matche
     });
 })();
 ```
-I resolved this by removing the unecessary brackets and putting the function in the necessary areas. 
+I resolved this by removing the unnecessary brackets and putting the function in the necessary areas. 
 
 ## Unresolved ## 
 
 ### Image ratio ### 
 
-As mentioned before the image ratio isn't set and to make this as consistent as possible, the images all should be the same ratio. Future features should include custom imargey to ensure consistency across the board. 
+As mentioned before the image ratio isn't set and to make this as consistent as possible, the images all should be the same ratio. Future features should include custom imagery to ensure consistency across the board. 
 
-### Accessability ###
+### Accessibility ###
 
-- I found that during my testing that the accessability was slightly lower to what I'd like it to be. This is due to the colour contrasts. I found that the only real way of contrasting the colours I had chosen for this game was to put white or black with the colour choices and then darken the tone of them. 
+- I found that during my testing that the accessibility was slightly lower to what I'd like it to be. This is due to the colour contrasts. I found that the only real way of contrasting the colours I had chosen for this game was to put white or black with the colour choices and then darken the tone of them. 
 - The results for it are below.
 
-![Accessability](readmefiles/accessability.png)
+![Accessibility](readmefiles/accessability.png)
 
 The Lighthouse results for this are as follows;
 
-![Lighthouse Accessability](readmefiles/accessabilitylighthouse.png)
+![Lighthouse Accessibility](readmefiles/accessabilitylighthouse.png)
 
 I found that after viewing it, the colours being this bland and dull took away from the fun dynamic of the game. I decided to keep it the same and add it in as a future feature. I'd create a seperate game and connect a link for the contrasting version of the game to aid those who are visually impaired.
 
