@@ -193,6 +193,10 @@ Validation for **style.css** found the following results:
 
 ![CSS Validation](readmefiles/cssvalidation.png)
 
+## JavaScript ##
+The JavaScript code was checked over by [jshint](https://jshint.com/) which found the following results;
+![jshint](readmefiles/jshint.png)
+
 [Back to top](<#contents>)
 <hr>
 
@@ -258,9 +262,11 @@ I resolved this by removing the unecessary brackets and putting the function in 
 
 ## Unresolved ## 
 
+### Image ratio ### 
+
 As mentioned before the image ratio isn't set and to make this as consistent as possible, the images all should be the same ratio. Future features should include custom imargey to ensure consistency across the board. 
 
-## Accessability ## 
+### Accessability ###
 
 - I found that during my testing that the accessability was slightly lower to what I'd like it to be. This is due to the colour contrasts. I found that the only real way of contrasting the colours I had chosen for this game was to put white or black with the colour choices and then darken the tone of them. 
 - The results for it are below.
