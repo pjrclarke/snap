@@ -95,6 +95,7 @@ body {
     text-decoration: none;
     word-spacing: 2px;
     padding: 30px 0;
+    text-shadow: 1px 1px 0 #3a3a3a;
 }
 .buttonhard span {
     display:flex;
