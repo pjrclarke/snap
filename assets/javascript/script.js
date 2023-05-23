@@ -65,7 +65,7 @@ function disableCards () {
     secondCard.removeEventListener('click',flipCard);
     matchedCards += 1;
     checkWin();
-    cardMatch.play();
+    if (notMuted) cardMatch.play();
     resetBoard();
 }
 
@@ -84,8 +84,8 @@ function gameOver () {
         document.getElementById("total").innerHTML = score; 
         cards.forEach(card => card.classList.remove('flip'));
         newGame();
-        gameOverSound.play();
         openGameOver();
+        if (notMuted) gameOverSound.play();
 }
 /* This function resets the game after a gameOver() has occured */
 function newGame () {
@@ -113,7 +113,7 @@ function unflipCards() {
 
         resetBoard();
     }, 500);
-    notMatch.play();
+    if (notMuted) notMatch.play();
 }
 
 /* a simple function to reset the code */
@@ -127,8 +127,19 @@ function resetBoard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+
+/* sound on / off functions */
+
+let checkbox = document.getElementById("checkbox");
+let notMuted = checkbox.checked;
+
+checkbox.addEventListener('change', function() {
+    notMuted = this.checked;
+});
+
 /* The sound effects for events - all sounds from https://freesound.org/ */
 
 let cardMatch = new Audio("assets/sounds/correctSound.mp3");
 let gameOverSound = new Audio("assets/sounds/gameoversound.wav");
 let notMatch = new Audio("assets/sounds/wrong.mp3")
+

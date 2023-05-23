@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snap!</title>
-    <link rel="stylesheet" href="assets/style.css">
-<!--Font taken from https://fonts.google.com/-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Font taken from https://fonts.google.com/-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-<!--Favicon created at https://favicon.io/favicon-generator/-->
+    <!--Favicon created at https://favicon.io/favicon-generator/-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -23,14 +23,12 @@
 
     <h1 class="title1"><a href="index.html">Snap!</a></h1>
     <h2 class="title2">The Memory Game</h2>
-
-<!--This secion houses the entire game-->
+    <!--This secion houses the entire game-->
     <div class="easymodebox">
-
-<!--I need to create one div for every card front and back and also set the imagery for each side - 
+    <!--I need to create one div for every card front and back and also set the imagery for each side - 
     images from https://pixabay.com/ -->
 
-<!-- Code inspired by Marina Ferreira - https://marina-ferreira.github.io/tutorials/js/memory-game/ -->
+        <!-- Code inspired by Marina Ferreira - https://marina-ferreira.github.io/tutorials/js/memory-game/ -->
 
         <div class="easymodecard" data-framework="cardone">
             <img class="easyfront" src="assets/images/easy-one.webp" alt="cardone">
@@ -100,9 +98,16 @@
 <div class ="score">
     <p class="score-tally">You've completed Snap!<span id="total"> 0 </span> times.</p>
 </div>
-
+<!--code inspired by https://www.tutorialspoint.com/how-to-create-toggle-switch-by-using-html-and-css#:~:text=The%20toggle%20switch%20creates%20by,display%20the%20%22off%22%20state.-->
+<!--Sound toggle button-->
+<div class="soundtoggle">
+    <h3>Sound Effects</h3>
+    <label class="switch">
+        <input type="checkbox" checked id="checkbox">
+        <span class="slider round"></span>
+      </label>
+</div>
 <!--Another pop up when the game finishes, this gives the user an option to play again or return to the homescreen-->
-
 <div class="gameoverpopup" id="gameOverPopup">
     <img src="assets/images/cardback.webp" alt="question mark">
     <h2>Congratulations!!</h2>
@@ -111,6 +116,6 @@
     <p class="gameoverbutton"><a href="index.html">Nope! (Lose your progress)</a></p>
 </div>
 
-<script src="assets/script.js"></script>
+<script src="assets/javascript/script.js"></script>
 </body>
 </html>

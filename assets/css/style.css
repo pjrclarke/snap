@@ -263,6 +263,88 @@ body {
     align-items: center;
 }
 
+/* sound toggle styling */
+.soundtoggle {
+   
+    background-color: white;
+    border:2px solid #43abc9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 50%;
+    width: 300px;
+    margin: auto;
+    font-size: 15px;
+    height:60px;
+}
+.soundtoggle h3 {
+    margin: 20px;
+    text-shadow: 1px 1px 0 #3a3a3a;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius: 5px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 5px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 5px;
+  }
+  
+  input:checked + .slider {
+    background-color: #43abc9;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #43abc9;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+ /* Transition*/
+ .toggle-label,
+ .toggle-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
 /* pop up for when the game ends, using the same technique as the one before */
 
 .gameoverpopup {
@@ -310,7 +392,7 @@ body {
 }
 
 
-/*This shake animation was created and copied from https://www.w3schools.com/howto/howto_css_shake_image.asp. Initially for imagery, but used for text in my code*/
+/*This shake animation was created and inspired by https://www.w3schools.com/howto/howto_css_shake_image.asp. Initially for imagery, but used for text in my code*/
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -366,29 +448,42 @@ body {
 }
 
 /*responsiveness*/
+@media screen and (max-width: 820px) {
+.title1,.title2 {
+    margin-top: 20px;
+}
+}
+
 
 @media screen and (max-width: 768px) {
+
 .mainpage-box {
     width:450px;
     font-size: 20px;
  }
+
 .buttoneasy {
     width: 80%;
 }
+
 .buttonhard {
     width:80%;
 }
+
 .easymodebox {
     width: 600px;
     height: 450px;
 }
+
 .easymodecard {
     border: 2px solid #3a3a3a;
     border-radius: 8%;
 }
+
 .gameoverpopup {
     width: 90%;
 }
+
 .instructions {
     width: 95%;
     font-size:5px;
@@ -398,6 +493,7 @@ body {
 }
 
 @media screen and (max-width: 610px) {
+
 .easymodebox {
     width: 500px;
     height: 375px;
@@ -405,6 +501,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    
 .easymodebox {
     width: 400px;
     height: 300px;
@@ -417,9 +514,7 @@ body {
 
 @media screen and (max-width: 450px) {
 
-.responsive {
-    margin-top: 20%;
-}
+
 .mainpage-box {
     width:380px;
     font-size: 20px;
@@ -480,6 +575,8 @@ body {
     width: 300px;
     height: 130px;
     font-size: 20px;
+    margin-top: 5px;
+    margin-bottom:10px;
 }
 .gameoverpopup {
     width: 95%;
@@ -494,6 +591,14 @@ body {
     height: 50px;
     border: none;
     font-size: 20px;
+}
+.soundtoggle {
+    margin-top: 10px;
+    font-size: 10px;
+    width: 200px;
+}
+.soundtoggle h3 {
+    margin:2px;
 }
 }
 

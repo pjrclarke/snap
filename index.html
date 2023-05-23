@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Game: Snap, Memory game, category:game">
     <title>Snap!</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-<!--Favicon created at https://favicon.io/favicon-generator/-->
+    <!--Favicon created at https://favicon.io/favicon-generator/-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -18,28 +18,28 @@
 </head>
 <body>
 <!--Created a class to manage responsiveness-->
-    <div class="responsive">
-<!--The main title, repeated on both pages-->
+<div class="responsive">
+    <!--The main title, repeated on both pages-->
     <h1 class="title1"><a href="index.html">Snap!</a></h1>
     <h2 class="title2">The Memory Game</h2>
-<!--The main area, play and instructions, housed in a div to control the centration of the elements-->
+        <!--The main area, play and instructions, housed in a div to control the centration of the elements-->
         <div class="mainpage-box">
             <a class="buttoneasy" href="game.html"><span>PLAY!</span></a>
-<!--The instructions house a JavaScript link as this anchor will create a pop up when clicked-->
+            <!--The instructions house a JavaScript link as this anchor will create a pop up when clicked-->
             <button class="buttonhard" onclick="openInstructions()"><span>Instructions</span></a>
-<!-- These are the instructions, housed in a div which I'll style and add the transition to pop up in CSS and JS-->
-                <div class="instructions" id="instructions">
-                    <img src="assets/images/cardback.webp" alt="question mark">
-                    <h2>Instructions</h2>
-                    <p>Try and pair all of the cards on the page!</p>
-                    <p>Simply click two cards to see if they match.</p>
-                    <p>If they don't match, they will turn back around and you can try again.</p>
-                    <p>**Warning: sound effects**</p>
-                    <p>All good? Then let's go!</p>
-                    <p onclick="closeInstructions()"><a class="button" href="./game.html">Let's do it!</a><p>
-                </div>
+            <!-- These are the instructions, housed in a div which I'll style and add the transition to pop up in CSS and JS-->
+            <div class="instructions" id="instructions">
+                <img src="assets/images/cardback.webp" alt="question mark">
+                <h2>Instructions</h2>
+                <p>Try and pair all of the cards on the page!</p>
+                <p>Simply click two cards to see if they match.</p>
+                <p>If they don't match, they will turn back around and you can try again.</p>
+                <p>**Warning: sound effects**</p>
+                <p>All good? Then let's go!</p>
+                <p onclick="closeInstructions()"><a class="button" href="./game.html">Let's do it!</a><p>
+            </div>
         </div>
-    </div>
-<script src="assets/script.js"></script>
+</div>
+<script src="assets/javascript/script.js"></script>
 </body>
 </html>

@@ -8,11 +8,11 @@ Get comfortable, be silly and <a href = https://pjrclarke.github.io/snap/index.h
 # Contents
 * [**User Experience**](<#user-experience>)
     * [User Stories](<#user-stories>)
-* [**Wireframes**](<#wireframes>)
-* [**Site Structure**](#site-structure)
-* [**Design Choices**](#design-choices)
-    * [Typography](#typography)
-    * [Colour Choices](#colour-choices)
+    * [Wireframes](<#wireframes>)
+    * [Site Structure](#site-structure)
+    * [Design Choices](#design-choices)
+        * [Typography](#typography)
+        * [Colour Choices](#colour-choices)
 * [**Features**](<#features>)
     * [Home Page](<#home-page>)
     * [Game](<#game>)
@@ -21,14 +21,14 @@ Get comfortable, be silly and <a href = https://pjrclarke.github.io/snap/index.h
 * [**Testing**](<#testing>)
     * [Lighthouse - Home Page](<#lighthouse---index.html>)
     * [Lighthouse - Game Page](<#lighthouse---game.html>)
-* [**Validator Testing**](<#validator-testing>)
-    * [HTML - Validation](<#html---validation>)
-    * [CSS - Validation](<#css---validation>)
-* [**Known Bugs**](<#known-bugs>)
-    * [Resolved](<#resolved>)
-    * [Unresolved](<#unresolved>)
-    * [Accessibility](<#accessibility>)
-* [**Testing User Stories**](<#testing-user-stories>)
+    * [Validator Testing](<#validator-testing>)
+        * [HTML - Validation](<#html---validation>)
+        * [CSS - Validation](<#css---validation>)
+    * [Known Bugs](<#known-bugs>)
+        * [Resolved](<#resolved>)
+        * [Unresolved](<#unresolved>)
+        * [Accessibility](<#accessibility>)
+    * [Testing User Stories](<#testing-user-stories>)
 * [**Deployment**](<#deployment>)
     * [To deploy the project](<#to-deploy-the-project>)
     * [To fork the project](<#to-fork-the-project>)
@@ -150,7 +150,7 @@ When the game is over a pop-up shows up congratulating you for completing the bo
 
 # Testing #
 
-## HTML Lighthouse Testing ##
+## Lighthouse Testing ##
 
 ## Lighthouse - index.html ##
 
@@ -341,17 +341,19 @@ The method to clone this repository is as follows;
 [Back to top](<#contents>)
 <hr>
 
+# Credits # 
+
 ## Content ##
 - The fonts were taken from [Google Fonts](https://fonts.google.com/)
 - HTML and CSS code is custom.
-- Javascript code was inspired by Marina Ferreira - https://marina-ferreira.github.io/tutorials/js/memory-game/. I built upon her code and as it felt unfinished, I finished it. 
+- Javascript code was inspired by Marina Ferreira - [Link to repository](https://marina-ferreira.github.io/tutorials/js/memory-game/).
 - The Wireframes were created using software on [Balsamiq](https://www.balsamiq.cloud).
 
 ## Media ##
 
-- Images were taken from https://pixabay.com/ which offers Stunning royalty-free images & royalty-free stock images. 
-- Sounds were downloaded from https://freesound.org where you can Find any sound you like in a collaborative collection of 599,791 free sounds.
-- The favicon was created on https://favicon.io/favicon-generator/ 
+- Images were taken from [Pixabay](https://pixabay.com/) which offers Stunning royalty-free images & royalty-free stock images. 
+- Sounds were downloaded from [FreeSound](https://freesound.org) where you can Find any sound you like in a collaborative collection of 599,791 free sounds.
+- The favicon was created on [Favicon](https://favicon.io/favicon-generator/) 
 
 
 
