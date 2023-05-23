@@ -97,7 +97,7 @@ function newGame () {
 /* This function actively checks if the cards match, if they do then activate disableCards() if not unflipcards () */
 
 function checkForMatch() {
-    let match = firstCard.dataset.framework === secondCard.dataset.framework 
+    let match = firstCard.dataset.framework === secondCard.dataset.framework;
         match ? disableCards() : unflipCards();
         return;
 }
@@ -141,5 +141,5 @@ checkbox.addEventListener('change', function() {
 
 let cardMatch = new Audio("assets/sounds/correctSound.mp3");
 let gameOverSound = new Audio("assets/sounds/gameoversound.wav");
-let notMatch = new Audio("assets/sounds/wrong.mp3")
+let notMatch = new Audio("assets/sounds/wrong.mp3");
 

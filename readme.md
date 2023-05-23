@@ -3,7 +3,7 @@
 
 Get comfortable, be silly and <a href = https://pjrclarke.github.io/snap/index.html>click here to play `Snap!`</a>.
 
-![responsive mockup](readmefiles/responsive.png)
+![responsive mockup](readmefiles/responsive1.png)
 
 # Contents
 * [**User Experience**](<#user-experience>)
@@ -24,6 +24,9 @@ Get comfortable, be silly and <a href = https://pjrclarke.github.io/snap/index.h
     * [Validator Testing](<#validator-testing>)
         * [HTML - Validation](<#html---validation>)
         * [CSS - Validation](<#css---validation>)
+        * [JavaScript](<#javascript>)
+    * [Browser Testing](<#browser-testing>)
+    * [Responsiveness Testing](<#responsiveness-test>)
     * [Known Bugs](<#known-bugs>)
         * [Resolved](<#resolved>)
         * [Unresolved](<#unresolved>)
@@ -109,11 +112,11 @@ Selecting play will take you straight to the [Game](game.html) action whereas cl
 
 The Game page welcomes the user with fun filled mystery. 12 squares (cards) are offered out with the score shown at the bottom. The colours are mirrored by the colours already chosen to remain consistent with the site dynamic. 
 
-![Game](readmefiles/gameone.png)
+![Game](readmefiles/gameone1.png)
 
-When selecting these cards, the user is offered a few things to immerse them. Firstly, we have a smooth flipping of the cards, colourful and fun numbers on different coloured backgrounds and fun little sound effects (my four year old son laughed so confirmation that it works) which are different depending on whether you select the right match or wrong match. 
+When selecting these cards, the user is offered a few things to immerse them. Firstly, we have a smooth flipping of the cards, colourful and fun numbers on different coloured backgrounds and fun little sound effects (my four year old son laughed so confirmation that it works) which are different depending on whether you select the right match or wrong match. If the sound effects aren't to your liking, you have the option of toggling them off at the bottom. 
 
-![During the Game](readmefiles/gametwo.png)
+![During the Game](readmefiles/gametwo2.png)
 
 When the game is over a pop-up shows up congratulating you for completing the board. The word 'Congratulations' shakes more than my washing machine trying  to escape its cupboard, a sound effect of a tremendous fanfare, an option to play again or leave and lose the progress of the score which will increase the more you play the game. 
 
@@ -156,17 +159,17 @@ When the game is over a pop-up shows up congratulating you for completing the bo
 
 Home Page Lighthouse report:
 
-![Home Lighthouse](readmefiles/indexhtmllighthouse.png)
+![Home Lighthouse](readmefiles/indexhtmllighthouse1.png)
 
 ## Lighthouse - game.html ###
 
 The game page Lighthouse report found the following:
 
-![Game Lighthouse](readmefiles/gamehtmllighthouse.png)
+![Game Lighthouse](readmefiles/gamehtmllighthouse1.png)
 
-Best Practices came up at 83% based off of image ratio - Admittedly, I knew this was going to be an issue for this game however, as mentioned in future features. I want to have custom imagery and have better control on the card ratio. 
+Accessability resulted in 78% based off of image ratio and label input - Admittedly, I knew this was going to be an issue for this game however, as mentioned in future features. I want to have custom imagery and have better control on the card ratio I'll also create a work around for the label input. 
 
-![Game Lighthouse Best Practices](readmefiles/gamehtmllighthousebp.png)
+
 
 [Back to top](<#contents>)
 <hr>
@@ -195,10 +198,23 @@ Validation for **style.css** found the following results:
 
 ## JavaScript ##
 The JavaScript code was checked over by [jshint](https://jshint.com/) which found the following results;
-![jshint](readmefiles/jshint.png)
+![jshint](readmefiles/jshint1.png)
 
 [Back to top](<#contents>)
 <hr>
+
+## Browser Testing ##
+
+`Snap!` was tested on the following browsers with no visible issues for the user. Google Chrome, Microsoft Edge, Safari and Mozilla Firefox. Appearance, functionality and responsiveness were consistent throughout for a range of device sizes and browsers.
+## Responsiveness Test ##
+
+* The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).
+
+|        | Moto G4 | Galaxy S5 | iPhone 5 | iPad | iPad Pro | Display <1200px | Display >1200px |
+|--------|---------|-----------|----------|------|----------|-----------------|-----------------|
+| Render | pass    | pass      | pass     | pass | pass     | pass            | pass            |
+| Images | pass    | pass      | pass     | pass | pass     | pass            | pass            |
+| Links  | pass    | pass      | pass     | pass | pass     | pass            | pass            |
 
 # Known Bugs #
 
